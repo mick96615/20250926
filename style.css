@@ -1,0 +1,95 @@
+/* ========== 網站整體設定 ========== */
+body {
+  font-family: "Noto Sans TC", sans-serif; /* 設定字體 */
+  line-height: 1.6;                        /* 行距 */
+  margin: 0;                               /* 移除預設外距 */
+  padding: 0;                              /* 移除預設內距 */
+  background-color: #fefefe;               /* 背景色 */
+  color: #333;                             /* 文字顏色 */
+}
+
+/* ========== 頁首 header ========== */
+header {
+  background-color: #ffe58f;               /* 淡黃色背景 */
+  padding: 20px;                           /* 內距 */
+  text-align: center;                      /* 內容置中 */
+}
+
+header h1 {
+  margin-bottom: 10px;                     /* 標題下方空隙 */
+}
+
+/* ========== 主要內容區域 main ========== */
+main {
+  padding: 30px;                           /* 四周內距 */
+}
+
+/* ========== 各區塊標題 h2 ========== */
+h2 {
+  color: #444;                             /* 深灰色文字 */
+  border-bottom: 2px solid #ffd666;        /* 底線裝飾 */
+  padding-bottom: 5px;                     /* 底部內距 */
+  margin-top: 40px;                        /* 與上方區塊間距 */
+}
+
+/* ========== 圖片設定 ========== */
+img {
+  display: block;                          /* 區塊元素 */
+  margin: 15px auto;                       /* 垂直間距 + 水平置中 */
+  border-radius: 8px;                      /* 圓角 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);   /* 陰影效果 */
+}
+
+/* ========== 清單設定 ========== */
+ul {
+  list-style-type: square;                 /* 方形符號 */
+  padding-left: 20px;                      /* 左邊間距 */
+}
+
+/* ========== 表格設定 ========== */
+table {
+  width: 100%;                             /* 滿版寬度 */
+  border-collapse: collapse;              /* 合併邊框 */
+  margin-top: 10px;                        /* 與標題間距 */
+}
+
+table, th, td {
+  border: 1px solid #ccc;                 /* 灰色邊框 */
+  padding: 10px;                          /* 內距 */
+  text-align: center;                     /* 文字置中 */
+}
+
+/* ========== 表單 input 與 textarea ========== */
+form input,
+form textarea {
+  width: 100%;                             /* 滿版寬度 */
+  padding: 8px;                            /* 內距 */
+  margin-top: 5px;                         /* 與標籤間距 */
+  box-sizing: border-box;                 /* 內距不影響寬度 */
+  border: 1px solid #ccc;                 /* 邊框 */
+  border-radius: 5px;                     /* 圓角 */
+}
+
+/* ========== 表單送出按鈕 ========== */
+form button {
+  margin-top: 10px;                       /* 上方間距 */
+  padding: 10px 20px;                     /* 內距 */
+  background-color: #ffa940;              /* 橘色背景 */
+  color: white;                           /* 白色文字 */
+  border: none;                           /* 無邊框 */
+  border-radius: 5px;                     /* 圓角 */
+  cursor: pointer;                        /* 滑鼠指標變手指 */
+}
+
+/* ========== 滑過按鈕時的變色效果 ========== */
+form button:hover {
+  background-color: #fa8c16;              /* 滑過變深橘色 */
+}
+
+/* ========== 頁尾 footer ========== */
+footer {
+  background-color: #ffd666;              /* 淡黃色背景 */
+  text-align: center;                     /* 置中 */
+  padding: 15px;                          /* 內距 */
+  margin-top: 50px;                       /* 與上方間距 */
+}

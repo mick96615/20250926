@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<!-- 定義 HTML 文檔的開始 -->
+<html lang="zh-Hant">
+
+<!-- 包含文檔的元數據 -->
+<head>
+    <meta charset="UTF-8">
+    <title>我的自我介紹</title> <!-- 頁面標題，顯示在瀏覽器標籤上 -->
+    <link rel="stylesheet" href="style.css"> <!-- 連結外部 CSS 檔案 -->
+</head>
+
+<!-- 包含文檔的主要內容 -->
+<body>
+    <header>
+        <h1>你好，我是陳祈翔</h1>
+        <p><strong>就讀學校：</strong>淡江大學</p> <!-- 使用 <p> 來定義段落，使用 <strong> 標籤來加粗文字 -->
+        <p><strong>科系：</strong>資訊管理學系</p>
+    </header>
+
+    <main>
+        <!-- 文字介紹 -->
+        <section>
+            <h2>關於我</h2>
+            <p>我是一個熱愛學習新技術的學生，平時喜歡 <em>打排球</em>、<em>攝影</em> 和 <em>聽音樂</em>。</p> <!-- 使用 <em> 標籤來強調文字（斜體） -->
+        </section>
+
+        <!-- 圖片 -->
+        <section>
+            <h2>照片</h2>
+
+            <!-- 使用 <img> 標籤來插入圖片（也可以直接存在資料夾用目錄的位置來顯示圖片），alt 屬性提供替代文字，width 屬性設定圖片寬度 -->
+            <img src="https://placekitten.com/300/200" alt="可愛的貓" width="300">
+            <img src="images/cat.jpg" alt="另一隻可愛的貓" width="300"> 
+        </section>
+
+        <!-- 超連結 -->
+        <section>
+            <h2>我的社群</h2>
+            
+            <!-- 無序列表 -->
+            <ul>
+                <li><a href="https://www.instagram.com/mick96615/" target="_blank">Instagram</a></li> <!-- 使用使用 <a> 定義超連結，target="_blank" 在新標籤頁打開連結 -->
+                <li><a href="https://github.com">GitHub</a></li> <!-- 省略 target 屬性，預設在同一標籤頁打開連結 -->
+            </ul>
+        </section>
+
+        <!-- 表格 -->
+        <section>
+            <h2>我的課表</h2>
+            <table border="1"> <!-- 使用 border 屬性來添加邊框，數字代表寬度 -->
+                <tr>
+                    <th>時間</th> <!-- 使用 <th> 定義表頭單元格（粗體） -->
+                    <th>星期一</th>
+                    <th>星期二</th>
+                </tr>
+                <tr>
+                    <td>早上</td>  <!-- 使用 <td> 定義表格數據單元格（一般字體） -->
+                    <td>資管概論</td>
+                    <td>HTML/CSS</td>
+                </tr>
+                <tr>
+                    <td>下午</td>
+                    <td>排球課</td>
+                    <td>專題討論</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- 表單 -->
+        <section>
+            <h2>聯絡我</h2>
+            <form>
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">電子郵件：</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="message">留言：</label><br>
+                <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+                <button type="submit">送出</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 O O 的自我介紹頁</p>
+    </footer>
+</body>
+
+</html>
